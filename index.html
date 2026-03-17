@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FakeCheck AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🛡 FakeCheck AI</h1>
+<p>AI Multimodal Misinformation Detector</p>
+</header>
+
+<div class="main-container">
+
+<div class="card">
+
+<h2>📝 Text Detection</h2>
+<textarea id="textInput" placeholder="Paste suspicious text here..."></textarea>
+<button onclick="checkText()">Analyze Text</button>
+
+</div>
+
+<div class="card">
+
+<h2>🖼 Image Detection</h2>
+<input type="file" id="imageInput">
+<button onclick="checkImage()">Analyze Image</button>
+
+</div>
+
+<div class="card">
+
+<h2>🎤 Audio Detection</h2>
+<input type="file" id="audioInput">
+<button onclick="checkAudio()">Analyze Audio</button>
+
+</div>
+
+</div>
+
+<div class="result-box">
+
+<h2>📊 Result</h2>
+<div id="result">Waiting for analysis...</div>
+
+</div>
+<footer>
+FakeCheck AI • Advanced Misinformation Detection
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
